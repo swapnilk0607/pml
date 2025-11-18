@@ -1,0 +1,304 @@
+✅ Data read from csv
+Rows: 2371 Columns: 25
+Null value in Rows: 4  & Null value in Columns: 21
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2371 entries, 0 to 2370
+Data columns (total 25 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   p01      2371 non-null   float64
+ 1   p02      2371 non-null   float64
+ 2   p03      2370 non-null   float64
+ 3   p04      2370 non-null   float64
+ 4   p05      2370 non-null   float64
+ 5   p06      2370 non-null   float64
+ 6   p07      2370 non-null   float64
+ 7   p08      2370 non-null   float64
+ 8   p09      2370 non-null   float64
+ 9   p10      2370 non-null   float64
+ 10  p11      2370 non-null   float64
+ 11  p12      2370 non-null   float64
+ 12  p13      2370 non-null   float64
+ 13  p14      2370 non-null   float64
+ 14  p15      2369 non-null   float64
+ 15  p16      2369 non-null   float64
+ 16  p17      2370 non-null   float64
+ 17  p18      2370 non-null   float64
+ 18  p19      2370 non-null   float64
+ 19  p20      2370 non-null   float64
+ 20  p21      2370 non-null   float64
+ 21  p22      2370 non-null   float64
+ 22  p23      2371 non-null   float64
+ 23  p24      2371 non-null   float64
+ 24  Ailment  2369 non-null   object
+dtypes: float64(24), object(1)
+memory usage: 463.2+ KB
+None
+--------------------------------------------------
+------ DESCRIPTION OF Q3 -------
+      count          mean          std       min           25%           50%           75%        max  skewness  kurtosis
+p01  2371.0      95.72359     18.39131      70.0      79.04528      94.91051     111.76635     140.00   0.41354  -0.86905
+p02  2371.0     157.05607     20.08663     125.0     140.42847     157.33415     172.88163     200.00   0.25216  -0.90377
+p03  2370.0      15.87582      1.10812      13.5      14.84110      15.97608      16.71619      17.50  -0.39111  -0.90098
+p04  2370.0  299642.03349  92072.55435  150000.0  207236.90420  308502.92160  375652.95040  450000.00   0.11991  -1.28983
+p05  2370.0    7576.39282   1975.40715    4000.0    5779.74322    7692.15344    9232.44178   11000.00  -0.14798  -1.22039
+p06  2370.0       4.78141      0.33451       4.2       4.47509       4.73111       5.07806       5.40   0.21408  -1.07578
+p07  2370.0      45.17637      4.13093      38.0      42.00627      44.98234      48.75476      52.00  -0.06919  -1.15237
+p08  2370.0      89.36884      5.81042      80.0      85.07402      88.56483      94.24310     100.00   0.23236  -1.09033
+p09  2370.0      30.01276      1.96481      27.0      28.29254      29.61875      31.84651      33.00   0.04550  -1.53015
+p10  2370.0      34.28816      1.12856      32.0      33.44048      34.46403      35.03285      36.00  -0.24501  -0.86045
+p11  2370.0      13.85388      5.19732       5.0       8.96678      13.80662      18.30206      25.00   0.09792  -1.10404
+p12  2370.0      21.54988      1.75758      18.5      20.18247      21.60817      22.75211      24.90  -0.07843  -0.96506
+p13  2370.0     103.69800      8.49737      90.0      96.34043     102.86858     110.95394     120.00   0.15548  -1.26515
+p14  2370.0      68.95147      5.34861      60.0      63.72524      70.09214      74.16095      80.00  -0.14928  -1.28680
+p15  2369.0      88.25187     26.64753      50.0      68.52290      82.28207     110.70566     150.00   0.50533  -0.74395
+p16  2369.0       4.90499      0.56500       4.0       4.36938       4.96389       5.36249       6.00  -0.04147  -1.15509
+p17  2370.0      94.60423     15.92551      70.0      81.65682      93.98221     106.07837     130.00   0.23445  -0.70472
+p18  2370.0      50.65914      5.68684      40.0      45.46319      49.96804      55.57781      60.00  -0.03579  -1.28332
+p19  2370.0      23.74841      8.59020      10.0      16.53944      21.74032      32.55165      40.00   0.09716  -1.38506
+p20  2370.0      23.44550      7.40585      10.0      16.92793      24.46756      28.43711      40.00  -0.02912  -0.83643
+p21  2370.0      81.20041     11.37036      60.0      70.24456      82.50016      91.10497     100.00  -0.00217  -1.17555
+p22  2370.0       0.86853      0.15244       0.6       0.72720       0.86267       0.98830       1.20   0.17825  -0.97970
+p23  2371.0       0.01851      0.01041       0.0       0.01166       0.01738       0.02796       0.04   0.05134  -0.82993
+p24  2371.0       1.61079      0.91986       0.0       0.72377       1.80344       2.37022       3.00  -0.22840  -1.27534
+------ DESCRIPTION OF Q3 -------
+          p01         p02        p03          p04          p05       p06        p07        p08        p09        p10  ...       p16         p17        p18        p19        p20        p21       p22       p23       p24   Ailment
+0  123.267876  178.595162  16.399606  410204.1015  8834.625206  4.809562  42.033429  92.318682  27.004825  35.257693  ...  5.041603   81.518196  49.968044  11.828202  28.273439  97.398323  0.649258  0.018998  2.891522   Healthy       
+1   78.099990  125.917170  17.343260  421416.3821  7551.743543  4.650226  40.209919  85.496273  28.292545  34.059034  ...  5.799974  109.089298  41.420259  40.000000  20.125301  85.016603  1.023012  0.033543  1.499165  Diabetes       
+2  102.281198  133.735334  15.709720  267971.2381  6030.085265  4.623836  46.893548  85.234094  32.408743  32.082015  ...  4.964792   92.357938  48.048329  10.000000  25.097262  74.378111  0.862670  0.032801  2.929267  Thalasse       
+3   79.183690  125.291132  15.201283  204385.8555  4507.019659  4.352788  38.891841  93.113226  27.778412  34.040408  ...  4.000000   70.448002  56.574596  18.282211  27.763620  65.041476  0.911120  0.026088  1.321096    Anemia       
+4   82.117428  187.164685  17.452967  384908.4868  7096.110188  4.696469  50.803614  88.335091  28.600120  35.299643  ...  4.884780   77.147088  43.833396  10.259593  26.937302  92.952192  0.687618  0.032591  0.340852  Thalasse       
+
+[5 rows x 25 columns]
+Missing Ailment values: 0
+Missing Ailment values: 0
+------------------------------------------------------------------------------------------------------------------------------------------------------
+--------Cleaned up dataframe-------------
+          p01         p02        p03          p04          p05       p06        p07        p08        p09        p10  ...       p16         p17        p18        p19        p20        p21       p22       p23       p24   Ailment
+0  123.267876  178.595162  16.399606  410204.1015  8834.625206  4.809562  42.033429  92.318682  27.004825  35.257693  ...  5.041603   81.518196  49.968044  11.828202  28.273439  97.398323  0.649258  0.018998  2.891522   Healthy       
+1   78.099990  125.917170  17.343260  421416.3821  7551.743543  4.650226  40.209919  85.496273  28.292545  34.059034  ...  5.799974  109.089298  41.420259  40.000000  20.125301  85.016603  1.023012  0.033543  1.499165  Diabetes       
+2  102.281198  133.735334  15.709720  267971.2381  6030.085265  4.623836  46.893548  85.234094  32.408743  32.082015  ...  4.964792   92.357938  48.048329  10.000000  25.097262  74.378111  0.862670  0.032801  2.929267  Thalasse       
+3   79.183690  125.291132  15.201283  204385.8555  4507.019659  4.352788  38.891841  93.113226  27.778412  34.040408  ...  4.000000   70.448002  56.574596  18.282211  27.763620  65.041476  0.911120  0.026088  1.321096    Anemia       
+4   82.117428  187.164685  17.452967  384908.4868  7096.110188  4.696469  50.803614  88.335091  28.600120  35.299643  ...  4.884780   77.147088  43.833396  10.259593  26.937302  92.952192  0.687618  0.032591  0.340852  Thalasse       
+
+[5 rows x 25 columns]
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Accuracy: 0.43670886075949367
+
+Confusion Metrics
+ [[68  5 39  0 12  0]
+ [21 41 23  0 23  0]
+ [17 15 69  0 10  0]
+ [ 1  0  3  0  0  0]
+ [35 16 28  0 23  0]
+ [ 0 19  0  0  0  6]]
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+Classification Report:
+                precision    recall  f1-score   support
+
+       Anemia       0.48      0.55      0.51       124
+     Diabetes       0.43      0.38      0.40       108
+      Healthy       0.43      0.62      0.51       111
+Heart Disease       0.00      0.00      0.00         4
+     Thalasse       0.34      0.23      0.27       102
+     Thromboc       1.00      0.24      0.39        25
+
+     accuracy                           0.44       474
+    macro avg       0.45      0.34      0.35       474
+ weighted avg       0.45      0.44      0.42       474
+
+Accuracy: 0.9915611814345991
+
+Confusion Metrics
+ [[124   0   0   0   0   0]
+ [  0 108   0   0   0   0]
+ [  0   0 111   0   0   0]
+ [  1   0   2   0   1   0]
+ [  0   0   0   0 102   0]
+ [  0   0   0   0   0  25]]
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+Classification Report:
+                precision    recall  f1-score   support
+
+       Anemia       0.99      1.00      1.00       124
+     Diabetes       1.00      1.00      1.00       108
+      Healthy       0.98      1.00      0.99       111
+Heart Disease       0.00      0.00      0.00         4
+     Thalasse       0.99      1.00      1.00       102
+     Thromboc       1.00      1.00      1.00        25
+
+     accuracy                           0.99       474
+    macro avg       0.83      0.83      0.83       474
+ weighted avg       0.98      0.99      0.99       474
+
+PS C:\Sushant\Python\Repos\pml-github\pml\content\sushantkambli07\EDA> python .\eda-exercise-7.py
+✅ Data read from csv
+Rows: 2371 Columns: 25
+Null value in Rows: 4  & Null value in Columns: 21
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2371 entries, 0 to 2370
+Data columns (total 25 columns):
+ #   Column   Non-Null Count  Dtype
+---  ------   --------------  -----
+ 0   p01      2371 non-null   float64
+ 1   p02      2371 non-null   float64
+ 2   p03      2370 non-null   float64
+ 3   p04      2370 non-null   float64
+ 4   p05      2370 non-null   float64
+ 5   p06      2370 non-null   float64
+ 6   p07      2370 non-null   float64
+ 7   p08      2370 non-null   float64
+ 8   p09      2370 non-null   float64
+ 9   p10      2370 non-null   float64
+ 10  p11      2370 non-null   float64
+ 11  p12      2370 non-null   float64
+ 12  p13      2370 non-null   float64
+ 13  p14      2370 non-null   float64
+ 14  p15      2369 non-null   float64
+ 15  p16      2369 non-null   float64
+ 16  p17      2370 non-null   float64
+ 17  p18      2370 non-null   float64
+ 18  p19      2370 non-null   float64
+ 19  p20      2370 non-null   float64
+ 20  p21      2370 non-null   float64
+ 21  p22      2370 non-null   float64
+ 22  p23      2371 non-null   float64
+ 23  p24      2371 non-null   float64
+ 24  Ailment  2369 non-null   object
+dtypes: float64(24), object(1)
+memory usage: 463.2+ KB
+None
+--------------------------------------------------
+------ DESCRIPTION OF Q3 -------
+      count          mean          std       min           25%           50%           75%        max  skewness  kurtosis
+p01  2371.0      95.72359     18.39131      70.0      79.04528      94.91051     111.76635     140.00   0.41354  -0.86905
+p02  2371.0     157.05607     20.08663     125.0     140.42847     157.33415     172.88163     200.00   0.25216  -0.90377
+p03  2370.0      15.87582      1.10812      13.5      14.84110      15.97608      16.71619      17.50  -0.39111  -0.90098
+p04  2370.0  299642.03349  92072.55435  150000.0  207236.90420  308502.92160  375652.95040  450000.00   0.11991  -1.28983
+p05  2370.0    7576.39282   1975.40715    4000.0    5779.74322    7692.15344    9232.44178   11000.00  -0.14798  -1.22039
+p06  2370.0       4.78141      0.33451       4.2       4.47509       4.73111       5.07806       5.40   0.21408  -1.07578
+p07  2370.0      45.17637      4.13093      38.0      42.00627      44.98234      48.75476      52.00  -0.06919  -1.15237
+p08  2370.0      89.36884      5.81042      80.0      85.07402      88.56483      94.24310     100.00   0.23236  -1.09033
+p09  2370.0      30.01276      1.96481      27.0      28.29254      29.61875      31.84651      33.00   0.04550  -1.53015
+p10  2370.0      34.28816      1.12856      32.0      33.44048      34.46403      35.03285      36.00  -0.24501  -0.86045
+p11  2370.0      13.85388      5.19732       5.0       8.96678      13.80662      18.30206      25.00   0.09792  -1.10404
+p12  2370.0      21.54988      1.75758      18.5      20.18247      21.60817      22.75211      24.90  -0.07843  -0.96506
+p13  2370.0     103.69800      8.49737      90.0      96.34043     102.86858     110.95394     120.00   0.15548  -1.26515
+p14  2370.0      68.95147      5.34861      60.0      63.72524      70.09214      74.16095      80.00  -0.14928  -1.28680
+p15  2369.0      88.25187     26.64753      50.0      68.52290      82.28207     110.70566     150.00   0.50533  -0.74395
+p16  2369.0       4.90499      0.56500       4.0       4.36938       4.96389       5.36249       6.00  -0.04147  -1.15509
+p17  2370.0      94.60423     15.92551      70.0      81.65682      93.98221     106.07837     130.00   0.23445  -0.70472
+p18  2370.0      50.65914      5.68684      40.0      45.46319      49.96804      55.57781      60.00  -0.03579  -1.28332
+p19  2370.0      23.74841      8.59020      10.0      16.53944      21.74032      32.55165      40.00   0.09716  -1.38506
+p20  2370.0      23.44550      7.40585      10.0      16.92793      24.46756      28.43711      40.00  -0.02912  -0.83643
+p21  2370.0      81.20041     11.37036      60.0      70.24456      82.50016      91.10497     100.00  -0.00217  -1.17555
+p22  2370.0       0.86853      0.15244       0.6       0.72720       0.86267       0.98830       1.20   0.17825  -0.97970
+p23  2371.0       0.01851      0.01041       0.0       0.01166       0.01738       0.02796       0.04   0.05134  -0.82993
+p24  2371.0       1.61079      0.91986       0.0       0.72377       1.80344       2.37022       3.00  -0.22840  -1.27534
+------ DESCRIPTION OF Q3 -------
+          p01         p02        p03          p04          p05       p06        p07        p08        p09        p10  ...       p16         p17        p18        p19        p20        p21       p22       p23       p24   Ailment
+0  123.267876  178.595162  16.399606  410204.1015  8834.625206  4.809562  42.033429  92.318682  27.004825  35.257693  ...  5.041603   81.518196  49.968044  11.828202  28.273439  97.398323  0.649258  0.018998  2.891522   Healthy       
+1   78.099990  125.917170  17.343260  421416.3821  7551.743543  4.650226  40.209919  85.496273  28.292545  34.059034  ...  5.799974  109.089298  41.420259  40.000000  20.125301  85.016603  1.023012  0.033543  1.499165  Diabetes       
+2  102.281198  133.735334  15.709720  267971.2381  6030.085265  4.623836  46.893548  85.234094  32.408743  32.082015  ...  4.964792   92.357938  48.048329  10.000000  25.097262  74.378111  0.862670  0.032801  2.929267  Thalasse       
+3   79.183690  125.291132  15.201283  204385.8555  4507.019659  4.352788  38.891841  93.113226  27.778412  34.040408  ...  4.000000   70.448002  56.574596  18.282211  27.763620  65.041476  0.911120  0.026088  1.321096    Anemia       
+4   82.117428  187.164685  17.452967  384908.4868  7096.110188  4.696469  50.803614  88.335091  28.600120  35.299643  ...  4.884780   77.147088  43.833396  10.259593  26.937302  92.952192  0.687618  0.032591  0.340852  Thalasse       
+
+[5 rows x 25 columns]
+Missing Ailment values: 0
+Missing Ailment values: 0
+------------------------------------------------------------------------------------------------------------------------------------------------------
+--------Cleaned up dataframe-------------
+          p01         p02        p03          p04          p05       p06        p07        p08        p09        p10  ...       p16         p17        p18        p19        p20        p21       p22       p23       p24   Ailment
+0  123.267876  178.595162  16.399606  410204.1015  8834.625206  4.809562  42.033429  92.318682  27.004825  35.257693  ...  5.041603   81.518196  49.968044  11.828202  28.273439  97.398323  0.649258  0.018998  2.891522   Healthy       
+1   78.099990  125.917170  17.343260  421416.3821  7551.743543  4.650226  40.209919  85.496273  28.292545  34.059034  ...  5.799974  109.089298  41.420259  40.000000  20.125301  85.016603  1.023012  0.033543  1.499165  Diabetes       
+2  102.281198  133.735334  15.709720  267971.2381  6030.085265  4.623836  46.893548  85.234094  32.408743  32.082015  ...  4.964792   92.357938  48.048329  10.000000  25.097262  74.378111  0.862670  0.032801  2.929267  Thalasse       
+3   79.183690  125.291132  15.201283  204385.8555  4507.019659  4.352788  38.891841  93.113226  27.778412  34.040408  ...  4.000000   70.448002  56.574596  18.282211  27.763620  65.041476  0.911120  0.026088  1.321096    Anemia       
+4   82.117428  187.164685  17.452967  384908.4868  7096.110188  4.696469  50.803614  88.335091  28.600120  35.299643  ...  4.884780   77.147088  43.833396  10.259593  26.937302  92.952192  0.687618  0.032591  0.340852  Thalasse       
+
+[5 rows x 25 columns]
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\linear_model\_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Accuracy: 0.43670886075949367
+
+Confusion Metrics
+ [[68  5 39  0 12  0]
+ [21 41 23  0 23  0]
+ [17 15 69  0 10  0]
+ [ 1  0  3  0  0  0]
+ [35 16 28  0 23  0]
+ [ 0 19  0  0  0  6]]
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+Classification Report:
+                precision    recall  f1-score   support
+
+       Anemia       0.48      0.55      0.51       124
+     Diabetes       0.43      0.38      0.40       108
+      Healthy       0.43      0.62      0.51       111
+Heart Disease       0.00      0.00      0.00         4
+     Thalasse       0.34      0.23      0.27       102
+     Thromboc       1.00      0.24      0.39        25
+
+     accuracy                           0.44       474
+    macro avg       0.45      0.34      0.35       474
+ weighted avg       0.45      0.44      0.42       474
+
+Accuracy: 0.9915611814345991
+
+Confusion Metrics
+ [[124   0   0   0   0   0]
+ [  0 108   0   0   0   0]
+ [  0   0 111   0   0   0]
+ [  1   0   2   0   1   0]
+ [  0   0   0   0 102   0]
+ [  0   0   0   0   0  25]]
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+C:\Users\SUSHANT\anaconda3\Lib\site-packages\sklearn\metrics\_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+Classification Report:
+                precision    recall  f1-score   support
+
+       Anemia       0.99      1.00      1.00       124
+     Diabetes       1.00      1.00      1.00       108
+      Healthy       0.98      1.00      0.99       111
+Heart Disease       0.00      0.00      0.00         4
+     Thalasse       0.99      1.00      1.00       102
+     Thromboc       1.00      1.00      1.00        25
+
+     accuracy                           0.99       474
+    macro avg       0.83      0.83      0.83       474
+ weighted avg       0.98      0.99      0.99       474
