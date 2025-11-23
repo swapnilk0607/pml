@@ -33,7 +33,7 @@ def train():
             print(file)
             image = imread(path+'\\'+file)
             gray_image = rgb2gray(image)
-            resized_image = resize(gray_image, (64, 64), anti_aliasing=True)
+            resized_image = resize(gray_image, (800, 600), anti_aliasing=True)
             plt.imshow(resized_image)
             plt.show()
             data.append(resized_image)
@@ -88,7 +88,7 @@ def train_rfc():
             print(file)
             image = imread(path+'\\'+file)
             gray_image = rgb2gray(image)
-            resized_image = resize(gray_image, (64, 64), anti_aliasing=True)
+            resized_image = resize(gray_image, (800, 600), anti_aliasing=True)
             plt.imshow(resized_image)
             plt.show()
             data.append(resized_image)
@@ -135,9 +135,9 @@ def train_rfc():
     plt.show()   
     
 def predict_object():
-    image = imread("sample1.jpg")
+    image = imread("image_12.jpg")
     gray_image = rgb2gray(image)
-    resized_image = resize(gray_image, (64, 64), anti_aliasing=True)
+    resized_image = resize(gray_image, (800, 600), anti_aliasing=True)
     plt.imshow(resized_image)
     plt.show()
     features = hog(resized_image, orientations=9, pixels_per_cell=(8,8),
@@ -146,9 +146,9 @@ def predict_object():
     return le.inverse_transform([pred])[0]
 
 def predict_object_rfc():
-    image = imread("sample1.jpg")
+    image = imread("image_12.jpg")
     gray_image = rgb2gray(image)
-    resized_image = resize(gray_image, (64, 64), anti_aliasing=True)
+    resized_image = resize(gray_image, (800, 600), anti_aliasing=True)
     plt.imshow(resized_image)
     plt.show()
     features = hog(resized_image, orientations=9, pixels_per_cell=(8,8),
