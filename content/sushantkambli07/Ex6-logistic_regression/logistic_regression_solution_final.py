@@ -17,10 +17,10 @@ files = {'clusters-4-v0.csv','clusters-4-v1.csv','clusters-4-v2.csv'}
 poly_log_reg = Pipeline([
     ('poly', PolynomialFeatures(degree=2, include_bias=False)),  # You can change degree
     ('scaler', StandardScaler()),  # Optional but recommended
-    ('log_reg', LogisticRegression(multi_class='ovr',random_state=42, max_iter=2000))
+    ('log_reg', LogisticRegression(multi_class='auto',random_state=42, max_iter=2000))
 ])
 algorithms = {
-    'Logistic-Regression': LogisticRegression(multi_class='ovr',random_state=42, max_iter=2000),
+    'Logistic-Regression': LogisticRegression(multi_class='auto',random_state=42, max_iter=2000),
     'Logistic-Regression-Poly': poly_log_reg,
     'SVC-Linear': SVC(kernel='linear', probability=True,random_state=42),
     'SVC-RBF': SVC(kernel='rbf', probability=True,random_state=42),
@@ -60,7 +60,7 @@ def fit_to_logistic_regression(algorithm, x_train, x_test, y_train, y_test, rows
     precision_train = precision_score(y_train, y_train_pred, average='micro')
     recall_train = recall_score(y_train, y_train_pred, average='micro')
     f1score_train = f1_score(y_train, y_train_pred, average='micro')
-    roc_train = roc_auc_score(y_train, y_train_pred_prob, multi_class='ovr')
+    roc_train = roc_auc_score(y_train, y_train_pred_prob, multi_class='auto')
     data['train_or_test_data'].append('train')
     data['accuracy'].append(accuracy_train)
     data['precision'].append(precision_train)
@@ -73,7 +73,7 @@ def fit_to_logistic_regression(algorithm, x_train, x_test, y_train, y_test, rows
     precision_test = precision_score(y_test, y_test_pred, average='micro')
     recall_test = recall_score(y_test, y_test_pred, average='micro')
     f1score_test = f1_score(y_test, y_test_pred, average='micro')
-    roc_test = roc_auc_score(y_test, y_test_pred_prob, multi_class='ovr')
+    roc_test = roc_auc_score(y_test, y_test_pred_prob, multi_class='auto')
     data['train_or_test_data'].append('test')
     data['accuracy'].append(accuracy_test)
     data['precision'].append(precision_test)
@@ -105,7 +105,7 @@ def fit_to_logistic_regression(algorithm, x_train, x_test, y_train, y_test, rows
         plt.plot(fpr, tpr, label=f'Class {cls} (AUC = {roc_auc:.2f})')
 
     plt.plot([0, 1], [0, 1], 'k--', label='Random Guess')
-    plt.title('ROC Curve Train Data - OvR')
+    plt.title('ROC Curve Train Data - auto')
     plt.xlabel('FPR')
     plt.ylabel('TPR')
     plt.legend()
@@ -120,7 +120,7 @@ def fit_to_logistic_regression(algorithm, x_train, x_test, y_train, y_test, rows
         plt.plot(fpr, tpr, label=f'Class {cls} (AUC = {roc_auc:.2f})')
     
     plt.plot([0, 1], [0, 1], 'k--', label='Random Guess')
-    plt.title('ROC Curve Test Data - OvR')
+    plt.title('ROC Curve Test Data - auto')
     plt.xlabel('FPR')
     plt.ylabel('TPR')
     plt.legend()
